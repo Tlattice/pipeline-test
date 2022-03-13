@@ -1,0 +1,23 @@
+libraries {
+     lib('test_library  ')
+ }
+
+ pipeline {
+ agent any
+  stages {
+      stage('Build') {
+          steps {
+              test_call('build')
+          }
+      }
+      stage('Test') {
+          steps {
+              test_call('test')
+          }
+      }
+      stage('Deploy') {
+          steps {
+              test_call('deploy')
+          }
+      }
+ }
