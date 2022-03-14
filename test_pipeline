@@ -1,5 +1,5 @@
 libraries {
-     lib('test_library  ')
+     lib('test_library')
  }
 
  pipeline {
