@@ -1,6 +1,4 @@
-libraries {
-     lib('test_library')
- }
+library 'test_library'
 
  pipeline {
  agent any
